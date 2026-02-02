@@ -9,7 +9,7 @@ const {
   createTour,
   updateTour,
   deleteTour,
-} = require("./tourHandlers.js"); 
+} = require("./controllers/tourHandlers.js"); 
 const { getAllUsers, getUserById, createUser, updateUser, deleteUser } = require("./controllers/userControllers.js");
 
 app.use(express.json());

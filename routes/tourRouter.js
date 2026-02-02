@@ -7,7 +7,7 @@ const {
   createTour,
   updateTour,
   deleteTour,
-} = require('../tourHandlers.js');
+} = require('../controllers/tourHandlers.js');
 
 router.get('/', getAllTours);
 router.post('/', createTour);
