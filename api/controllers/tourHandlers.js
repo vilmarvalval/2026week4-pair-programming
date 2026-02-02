@@ -1,4 +1,4 @@
-const Tour = require("../models/tourModel.js");
+const Tour = require('../models/tourModel.js');
 
 const getAllTours = (req, res) => {
   const tours = Tour.getAll();
@@ -41,7 +41,7 @@ const deleteTour = (req, res) => {
   const isDeleted = Tour.deleteOneById(tourId);
   if (isDeleted) {
     console.log("Deleted successfully");
-    res.status(204).send(); //204: No Content
+    res.status(204).send();
   } else {
     res.status(404).json({ message: "Tour not found" });
   }
