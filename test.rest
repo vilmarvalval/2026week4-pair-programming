@@ -1,0 +1,40 @@
+
+GET http://127.0.0.1:4000/tours
+
+###
+
+POST http://127.0.0.1:4000/tours
+Content-Type: application/json
+
+{
+  "name": "Test Tour",
+   "info": "This is a, Toyota",
+   "image": "test-image.jpg",
+   "price": 5,
+   "duration": 2,
+   "groupSize": 5,
+   "rating": 5,
+   "availability": true
+}
+###
+
+GET http://127.0.0.1:4000/tours/1
+
+###
+
+PUT http://127.0.0.1:4000/tours/1
+Content-Type: application/json
+
+{
+  "name": "Test Tour",
+   "info": "This is a, Toyota",
+   "image": "test-image.jpg",
+   "price": 5,
+   "duration": 2,
+   "groupSize": 5,
+   "rating": 5,
+   "availability": false
+}
+
+###
+DELETE http://127.0.0.1:4000/tours/1

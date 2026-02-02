@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "user-model": "node ./models/userModel.js"
   },
   "keywords": [],
   "author": "",
