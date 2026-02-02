@@ -38,3 +38,41 @@ Content-Type: application/json
 
 ###
 DELETE http://127.0.0.1:4000/tours/1
+
+###
+
+GET http://127.0.0.1:4000/users
+
+###
+
+POST http://127.0.0.1:4000/users
+Content-Type: application/json
+
+{
+  "name": "Matti Seppänen",
+    "password": "M@45mtg$",
+    "username": "mattis",
+    "address": "Mannerheimintie 14, 00100 Helsinki",	
+    "age": 23
+}
+
+###
+
+GET http://127.0.0.1:4000/users/1
+
+###
+
+PUT http://127.0.0.1:4000/users/1
+Content-Type: application/json
+
+{
+  "name": "Matti Seppänen",
+    "password": "M@45mtg$",
+    "username": "mattis",
+    "address": "Mannerheimintie 14, 00100 Helsinki",	
+    "age": 24
+}
+
+###
+
+DELETE http://127.0.0.1:4000/users/1
