@@ -10,26 +10,32 @@ const {
   updateTour,
   deleteTour,
 } = require("./tourHandlers.js"); 
+const { getAllUsers, getUserById, createUser, updateUser, deleteUser } = require("./controllers/userControllers.js");
 
-// Middleware to parse JSON
 app.use(express.json());
 app.use('/users', userRouter)
 
-// ROUTES
-// GET /tours
 app.get("/tours", getAllTours);
 
-// POST /tours
 app.post("/tours", createTour);
 
-// GET /tours/:tourId
 app.get("/tours/:tourId", getTourById);
 
-// PUT /tours/:tourId
 app.put("/tours/:tourId", updateTour);
 
-// DELETE /tours/:tourId
 app.delete("/tours/:tourId", deleteTour);
+
+app.use('/users', userRouter)
+
+app.get("/users", getAllUsers);
+
+app.post("/users", createUser);
+
+app.get("/users/:userId", getUserById);
+
+app.put("/users/:userId", updateUser);
+
+app.delete("/users/:userId", deleteUser);
 
 const port = 4000;
 // Start the server
