@@ -77,3 +77,17 @@ Content-Type: application/json
 ###
 
 DELETE http://127.0.0.1:4000/users/1
+
+
+###
+
+POST http://127.0.0.1:4000/users?admin=true
+Content-Type: application/json
+
+{
+  "name": "Test Admin",
+    "password": "Abcd",
+    "username": "admin",
+    "address": "Mannerheimintie 11, 00100 Helsinki",	
+    "age": 30
+}
